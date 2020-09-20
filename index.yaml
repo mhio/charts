@@ -3,7 +3,7 @@ entries:
   gogs:
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:09:29.278216+10:00"
+    created: "2020-09-20T18:13:58.804514+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -25,7 +25,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:09:29.274601+10:00"
+    created: "2020-09-20T18:13:58.800902+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -47,7 +47,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:09:29.270439+10:00"
+    created: "2020-09-20T18:13:58.796554+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -67,4 +67,4 @@ entries:
     urls:
     - https://mhio.github.io/charts/gogs/gogs-0.8.0.tgz
     version: 0.8.0
-generated: "2020-09-20T18:09:29.265648+10:00"
+generated: "2020-09-20T18:13:58.791228+10:00"
