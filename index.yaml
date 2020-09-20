@@ -3,14 +3,14 @@ entries:
   gogs:
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:05:53.369737+10:00"
+    created: "2020-09-20T18:09:29.278216+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 9.6.0
     description: 'Gogs: Go Git Service'
-    digest: 193baaef6540ac47c89525c7b1396a1e1b8289e6158895c772d00d8f6c3159d4
+    digest: accc3cfb1b3abc939e7be580e44b14edbec992c6f149d23788435555cf34f8cc
     home: https://gogs.io/
     icon: https://gogs.io/img/favicon.ico
     keywords:
@@ -25,7 +25,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:05:53.364915+10:00"
+    created: "2020-09-20T18:09:29.274601+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -47,7 +47,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:05:53.360638+10:00"
+    created: "2020-09-20T18:09:29.270439+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -67,4 +67,4 @@ entries:
     urls:
     - https://mhio.github.io/charts/gogs/gogs-0.8.0.tgz
     version: 0.8.0
-generated: "2020-09-20T18:05:53.355474+10:00"
+generated: "2020-09-20T18:09:29.265648+10:00"
