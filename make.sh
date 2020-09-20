@@ -44,8 +44,8 @@ run_build_repo_index(){
   set +x
   remote_versions=$(curl -s https://mhio.github.io/charts/index.yaml | yq '.entries.gogs[].version' -r)
   while [[ "$remote_versions" != "$local_versions" ]]; do
-    echo "$(date) sleeping 15"
-    sleep 15
+    echo "$(date) sleeping for 30 seconds more"
+    sleep 30
     remote_versions=$(curl -s https://mhio.github.io/charts/index.yaml | yq '.entries.gogs[].version' -r)
   done
   echo "gh page up to date around $(date)"
