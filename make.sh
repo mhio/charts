@@ -22,6 +22,7 @@ run_build_repo_index(){
   helm package . -u
   cd ..
   git checkout gh-pages
+  ls -l */*.tgz
   helm repo index . --url https://mhio.github.io/charts
   git commit . -m 'build index'
   git push
