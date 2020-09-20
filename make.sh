@@ -18,6 +18,7 @@ cd "$rundir"
 
 run_build_repo_index(){
   helm package gogs/ -u
+  git checkout gh-pages
   helm repo index .
 }
 
