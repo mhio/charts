@@ -19,7 +19,7 @@ cd "$rundir"
 run_build_repo_index(){
   helm package gogs/ -u
   git checkout gh-pages
-  helm repo index . --url https://mhio.github.io/helm3
+  helm repo index . --url https://mhio.github.io/charts
   git commit index.yaml -m 'build index'
   git push
   git checkout charts
