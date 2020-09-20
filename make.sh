@@ -20,9 +20,10 @@ run_build_repo_index(){
   set -x
   cd gogs
   helm package . -u
+  cd ..
   git checkout gh-pages
   helm repo index . --url https://mhio.github.io/charts
-  git commit index.yaml -m 'build index'
+  git commit . -m 'build index'
   git push
   git checkout charts
   set +x
