@@ -208,7 +208,7 @@ service:
 
     ## Either "Trace", "Info", "Warn", "Error", "Fatal", default is "Trace"
     ##
-    logLevel: Trace
+    logLevel: Info
 
     ## Undocumented, but you can take a guess.
     ##
