@@ -19,9 +19,10 @@ CHARTS="gogs"
 
 run_build_repo_index(){
   set -x
+  helm repo update
   for chart in $CHARTS; do
     cd gogs
-    helm package . -u
+    helm package .
     cd ..
   done
   git checkout gh-pages
