@@ -40,7 +40,7 @@ spec:
             - containerPort: 3000
             - containerPort: 22
           livenessProbe:
-            initialDelaySeconds: 90
+            initialDelaySeconds: 15
             httpGet:
               {{- if .Values.service.gogs.serviceRequireSignInView }}
               path: /user/login
@@ -49,7 +49,7 @@ spec:
               {{- end }}
               port: 3000
           readinessProbe:
-            initialDelaySeconds: 60
+            initialDelaySeconds: 10
             httpGet:
               {{- if .Values.service.gogs.serviceRequireSignInView }}
               path: /user/login
