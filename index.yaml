@@ -3,7 +3,7 @@ entries:
   gogs:
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T16:42:42.315783+10:00"
+    created: "2020-09-20T17:06:01.535566+10:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -21,6 +21,6 @@ entries:
     - name: mhio
     name: gogs
     urls:
-    - https://mhio.github.io/helm3/gogs-0.8.0-0.tgz
+    - https://mhio.github.io/charts/gogs-0.8.0-0.tgz
     version: 0.8.0-0
-generated: "2020-09-20T16:42:42.310504+10:00"
+generated: "2020-09-20T17:06:01.530082+10:00"
