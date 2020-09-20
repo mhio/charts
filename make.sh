@@ -30,8 +30,10 @@ run_build_repo_index(){
     ls -l $chart/*.tgz
   done
   helm repo index . --url https://mhio.github.io/charts
+  set +x
   local_versions=$(cat index.yaml | yq '.entries.gogs[].version' -r)
   echo "local chart versions: $local_versions"
+  set -x
   for chart in $CHARTS; do
     git add "$chart/"
   done
@@ -42,6 +44,7 @@ run_build_repo_index(){
   set +x
   remote_versions=$(curl -s https://mhio.github.io/charts/index.yaml | yq '.entries.gogs[].version' -r)
   while [[ "$remote_versions" != "$local_versions" ]]; do
+    echo "$(date) sleeping 15"
     sleep 15
     remote_versions=$(curl -s https://mhio.github.io/charts/index.yaml | yq '.entries.gogs[].version' -r)
   done
