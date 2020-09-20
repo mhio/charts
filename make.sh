@@ -14,17 +14,25 @@ fi
 
 cd "$rundir"
 
+CHARTS="gogs"
 ###
 
 run_build_repo_index(){
   set -x
-  cd gogs
-  helm package . -u
-  cd ..
+  for chart in $CHARTS; do
+    cd gogs
+    helm package . -u
+    cd ..
+  done
   git checkout gh-pages
-  ls -l */*.tgz
+  for chart in $CHARTS; do
+    ls -l $chart/*.tgz
+  done
   helm repo index . --url https://mhio.github.io/charts
-  git commit . -m 'build index'
+  for chart in $CHARTS; do
+    git add "$chart/"
+  done
+  git commit . -m 'make.sh add releases and build index'
   git push
   git checkout charts
   set +x
