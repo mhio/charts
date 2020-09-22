@@ -1,17 +1,17 @@
 # Gogs Helm Chart
 
-[Gogs][https://gogs.io] is a painless self-hosted Git service.
+[Gogs][] is a painless self-hosted Git service.
 
 ## TL;DR;
 
 ```console
 helm repo add mhio https://mhio.github.com/helm3
-$ helm install mhio/gogs
+$ helm install my-git mhio/gogs
 ```
 
 ## Introduction
 
-This chart bootstraps a [Gogs](https://gogs.io) deployment on a [Kubernetes][] cluster using
+This chart bootstraps a [Gogs][] deployment on a [Kubernetes][] cluster using
 the [Helm][] package manager.
 
 ## Prerequisites Details
@@ -23,7 +23,7 @@ the [Helm][] package manager.
 To install the chart with the release name `my-release`:
 
 ```console
-$ helm install --name my-release incubator/gogs
+$ helm upgrade --install my-release mhio/gogs
 ```
 
 ## Uninstalling the Chart
@@ -31,7 +31,7 @@ $ helm install --name my-release incubator/gogs
 To uninstall/delete the `my-release` deployment:
 
 ```console
-$ helm delete my-release
+$ helm uninstall my-release
 ```
 
 The command removes nearly all the Kubernetes components associated with the
