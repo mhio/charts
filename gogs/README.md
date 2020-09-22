@@ -2,7 +2,7 @@
 
 [Gogs][] is a painless self-hosted Git service.
 
-This is for helm3, most of it is the original [incubator/gogs](https://github.com/helm/charts/tree/master/incubator/gogs) chart.
+This is for helm3. Most of the chart is original [incubator/gogs](https://github.com/helm/charts/tree/master/incubator/gogs) chart, with bitnami PostgreSQL added.
 
 ## TL;DR;
 
