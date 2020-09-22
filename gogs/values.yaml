@@ -20,12 +20,10 @@ service:
   # nameOverride:
 
   ## HTTP listen port.
-  ## ref: https://gogs.io/docs/advanced/configuration_cheat_sheet
   ##
   httpPort: 3000
 
   ## HTTP listen port on Kubernetes node.
-  ## ref: https://gogs.io/docs/advanced/configuration_cheat_sheet
   ##
   httpNodePort:
 
@@ -38,12 +36,10 @@ service:
   sshNodePort:
 
   ## SSH_DOMAIN - Domain name to be exposed in SSH clone URL.
-  ## ref: https://gogs.io/docs/advanced/configuration_cheat_sheet
   ##
   sshDomain: localhost
 
   ## Gogs configuration values
-  ## ref: https://gogs.io/docs/advanced/configuration_cheat_sheet
   ##
   gogs:
 
@@ -347,8 +343,8 @@ persistence:
   ##
   size: 1Gi
 
-## Configuration values for the postgresql dependency.
-## ref: https://github.com/kubernetes/charts/blob/master/stable/postgresql/README.md
+## Configuration values for the bitnami postgresql dependency.
+## ref: https://bitnami.com/stack/postgresql/helm
 ##
 postgresql:
 
