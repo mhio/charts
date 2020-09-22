@@ -4,8 +4,7 @@
 helm repo add mhio https://mhio.github.io/charts/
 ```
 
-
-# gogs
+#@ gogs
 ```
 helm upgrade --install mygogs mhio/gogs -f mygogs.values.yaml
 ```
