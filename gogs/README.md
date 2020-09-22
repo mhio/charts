@@ -8,7 +8,7 @@ This is for helm3, most of it is the original [incubator/gogs](https://github.co
 
 ```console
 helm repo add mhio https://mhio.github.com/helm3
-$ helm install my-git mhio/gogs
+helm install my-release mhio/gogs
 ```
 
 ## Introduction
