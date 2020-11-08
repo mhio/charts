@@ -2,8 +2,30 @@ apiVersion: v1
 entries:
   gogs:
   - apiVersion: v2
+    appVersion: 0.12.3
+    created: "2020-11-08T12:18:57.349711+11:00"
+    dependencies:
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.11
+    description: 'Gogs: Go Git Service'
+    digest: 831c3fb46283f4c3f82ae294e6220763da3a0ade44dbc3c7bb9bf807cf49170f
+    home: https://gogs.io/
+    icon: https://gogs.io/img/favicon.ico
+    keywords:
+    - git
+    - vcs
+    - gogs
+    maintainers:
+    - name: mhio
+    name: gogs
+    urls:
+    - https://mhio.github.io/charts/gogs/gogs-0.9.0.tgz
+    version: 0.9.0
+  - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.404536+10:00"
+    created: "2020-11-08T12:18:57.345589+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -25,7 +47,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.400462+10:00"
+    created: "2020-11-08T12:18:57.342522+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -47,7 +69,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.396976+10:00"
+    created: "2020-11-08T12:18:57.339357+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -69,7 +91,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.392981+10:00"
+    created: "2020-11-08T12:18:57.335561+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -91,7 +113,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.389013+10:00"
+    created: "2020-11-08T12:18:57.331837+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -113,7 +135,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.385334+10:00"
+    created: "2020-11-08T12:18:57.327855+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -135,7 +157,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-09-20T18:49:04.38139+10:00"
+    created: "2020-11-08T12:18:57.324729+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -155,4 +177,4 @@ entries:
     urls:
     - https://mhio.github.io/charts/gogs/gogs-0.8.0.tgz
     version: 0.8.0
-generated: "2020-09-20T18:49:04.376535+10:00"
+generated: "2020-11-08T12:18:57.319678+11:00"
