@@ -3,7 +3,7 @@ entries:
   gogs:
   - apiVersion: v2
     appVersion: 0.12.3
-    created: "2020-11-08T12:27:39.636909+11:00"
+    created: "2020-11-08T12:32:34.508708+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -25,7 +25,7 @@ entries:
     version: 0.9.1
   - apiVersion: v2
     appVersion: 0.12.3
-    created: "2020-11-08T12:27:39.633724+11:00"
+    created: "2020-11-08T12:32:34.505197+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -47,7 +47,7 @@ entries:
     version: 0.9.0
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.629929+11:00"
+    created: "2020-11-08T12:32:34.501273+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -69,7 +69,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.626829+11:00"
+    created: "2020-11-08T12:32:34.497853+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -91,7 +91,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.623012+11:00"
+    created: "2020-11-08T12:32:34.493914+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -113,7 +113,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.619862+11:00"
+    created: "2020-11-08T12:32:34.490634+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -135,7 +135,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.61645+11:00"
+    created: "2020-11-08T12:32:34.486079+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -157,7 +157,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.613146+11:00"
+    created: "2020-11-08T12:32:34.482461+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -179,7 +179,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2020-11-08T12:27:39.609299+11:00"
+    created: "2020-11-08T12:32:34.479178+11:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -199,4 +199,4 @@ entries:
     urls:
     - https://mhio.github.io/charts/gogs/gogs-0.8.0.tgz
     version: 0.8.0
-generated: "2020-11-08T12:27:39.60478+11:00"
+generated: "2020-11-08T12:32:34.474174+11:00"
