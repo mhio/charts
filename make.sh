@@ -17,6 +17,8 @@ cd "$rundir"
 CHARTS="gogs"
 ###
 
+which yq
+
 run_build_repo_index(){
   set -x
   helm repo update
