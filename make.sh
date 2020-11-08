@@ -17,7 +17,8 @@ cd "$rundir"
 CHARTS="gogs"
 ###
 
-which yq
+yq=$(which yq)
+yq --version
 
 run_build_repo_index(){
   set -x
