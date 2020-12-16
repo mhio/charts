@@ -7,7 +7,7 @@ This is for helm3. Most of the chart is original [incubator/gogs](https://github
 ## TL;DR;
 
 ```console
-helm repo add mhio https://mhio.github.com/helm3
+helm repo add mhio https://mhio.github.io/charts/
 helm install my-release mhio/gogs
 ```
 
