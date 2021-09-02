@@ -38,7 +38,9 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 3000
+            {{- if not .Values.service.disableSsh }}
             - containerPort: 22
+            {{- end }}
           livenessProbe:
             initialDelaySeconds: 15
             httpGet:
