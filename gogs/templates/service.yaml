@@ -20,11 +20,13 @@ spec:
     nodePort: {{ .Values.service.httpNodePort | int }}
 {{- end }}
     name: {{ default "gogs" .Values.service.nameOverride }}-http
+{{- if not .Values.service.disableSsh }}
   - port: {{ .Values.service.sshPort | int }}
     targetPort: 22
 {{- if (and (eq .Values.serviceType "NodePort") (not (empty .Values.service.sshNodePort))) }}
     nodePort: {{ .Values.service.sshNodePort | int }}
 {{- end }}
     name: {{ default "gogs" .Values.service.nameOverride }}-ssh
+{{- end }}
   selector:
     app: {{ template "gogs.fullname" . }}

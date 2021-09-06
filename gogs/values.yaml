@@ -39,6 +39,10 @@ service:
   ##
   sshDomain: localhost
 
+  ## DISABLE_SSH - Whether to disable SSH access to the application entirely.
+  ##
+  disableSsh: false
+
   ## Gogs configuration values
   ##
   gogs:

@@ -27,6 +27,7 @@ data:
     SSH_DOMAIN = {{ default .Values.service.gogs.serverDomain .Values.service.sshDomain }}
     SSH_PORT = {{ .Values.service.sshPort }}
     SSH_LISTEN_PORT = {{ .Values.service.sshPort }}
+    DISABLE_SSH = {{ .Values.service.disableSsh }}
 
     [service]
     ENABLE_CAPTCHA = {{ .Values.service.gogs.serviceEnableCaptcha }}
